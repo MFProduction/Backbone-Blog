@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<htm lang="en">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone Tutorial blogroll App</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+	<script type="text/javascript">
+	console.log ("ffdgdf");
+	</script>
+	<div class="container">
+		<h1>Backone Blogroll app</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Author</th>
+					<th>Title</th>
+					<th>URL</th>
+					<th>Action</th>
+				</tr>
+				<tr>
+					<td><input class="form-control author-input"></td>
+					<td><input class="form-control title-input"></td>
+					<td><input class="form-control url-input"></td>
+					<td><button class="btn btn-primary add-blog">add</button></td>
+					</tr>
+				</tr>
+			</thead>
+			<tbody class="blogs-list"></tbody>
+		</table>
+	</div>
+	<script type="text/template" class="blogs-list-template">
+		<td><span class="author"><%= author %></span></td>
+		<td><span class="title"><%= title %></span></td>
+		<td><span class="url"><%= url %></span></td>
+		<td><button class="btn btn-warning edit-blog">edit</button>
+			<button class="btn btn-danger delete-blog">Delete</buttopn>
+			<button class="btn btn-success update-blog" style="display: none">update</button>
+			<button class="btn btn-danger cancel-blog" style="display: none">Cancel</button>
+		</td>
+	</script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+</html>
